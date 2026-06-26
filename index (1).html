@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Preet Travels — Premium Ertiga car rental for intercity trips, airport transfers & event bookings. Comfortable, reliable, and affordable rides.">
+  <meta name="theme-color" content="#000000">
+  <title>Preet Travels — Premium Car Rental Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">Preet Travels</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#car">Our Car</a>
+      <a href="#services">Services</a>
+      <a href="#booking" class="nav-cta">Book a Ride →</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Menu toggle" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="ertiga-hero.png" alt="Premium Ertiga car" loading="eager" fetchpriority="high">
+    </div>
+    <!-- Animated light streaks -->
+    <div class="hero-streaks">
+      <div class="streak streak-1"></div>
+      <div class="streak streak-2"></div>
+      <div class="streak streak-3"></div>
+    </div>
+    <!-- Floating particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-glass fade-up">
+          <div class="hero-badge">PREMIUM CAR RENTAL</div>
+          <h1>
+            <span>YOUR COMFORT,</span>
+            <span>OUR JOURNEY</span>
+          </h1>
+          <div class="hero-accent-line"></div>
+          <p>Premium Ertiga rides for intercity &amp; interstate travel, airport transfers &amp; events — any city, any state.</p>
+          <div class="hero-cta-row">
+            <a href="#booking" class="btn-primary">BOOK YOUR RIDE <span style="font-size:1.1rem">↗</span></a>
+            <a href="#car" class="btn-outline">EXPLORE CAR</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat-item"><strong>500+</strong><span>Trips Done</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item"><strong>4.9★</strong><span>Rating</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item"><strong>24/7</strong><span>Available</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OUR CAR ====== -->
+  <section class="car-section" id="car">
+    <div style="text-align:center">
+      <p class="section-label fade-up">Our Fleet</p>
+      <h2 class="section-title fade-up">Meet Your Ride</h2>
+    </div>
+    <div class="car-container">
+      <div class="car-gallery fade-up">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide active"><img src="car-1.jpg" alt="Ertiga Front View" loading="lazy"></div>
+          <div class="gallery-slide"><img src="car-2.jpg" alt="Ertiga Side View" loading="lazy"></div>
+          <div class="gallery-slide"><img src="car-3.jpg" alt="Ertiga Rear View" loading="lazy"></div>
+          <div class="gallery-slide"><img src="car-4.jpg" alt="Ertiga Boot Space" loading="lazy"></div>
+          <div class="gallery-slide"><img src="car-5.jpg" alt="Ertiga Interior Seats" loading="lazy"></div>
+        </div>
+        <button class="gallery-btn gallery-prev" id="galleryPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="gallery-btn gallery-next" id="galleryNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="gallery-dots" id="galleryDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="car-info fade-up">
+        <h3>Maruti Suzuki Ertiga</h3>
+        <p class="car-model">Premium MPV — Comfort Redefined</p>
+        <div class="car-features">
+          <span><svg class="feat-icon" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V7a5 5 0 0 0-5-5z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg> AC</span>
+          <span><svg class="feat-icon" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg> Music System</span>
+          <span><svg class="feat-icon" viewBox="0 0 24 24"><path d="M7 2v11m0 0a4 4 0 1 0 4 4V6a4 4 0 1 1 4 4v11" fill="none" stroke="currentColor" stroke-width="1.5"/></svg> USB Charging</span>
+          <span><svg class="feat-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg> Spacious Boot</span>
+        </div>
+        <div class="car-stat-grid">
+          <div class="car-stat">
+            <div class="num">6+1</div>
+            <div class="label">Passengers</div>
+          </div>
+          <div class="car-stat">
+            <div class="num">24/7</div>
+            <div class="label">Availability</div>
+          </div>
+          <div class="car-stat">
+            <div class="num">100%</div>
+            <div class="label">Sanitized</div>
+          </div>
+          <div class="car-stat">
+            <div class="num">5★</div>
+            <div class="label">Rated</div>
+          </div>
+        </div>
+        <p class="car-tagline">"One car. Full comfort. Every trip."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services">
+    <div style="text-align:center">
+      <p class="section-label fade-up">What We Offer</p>
+      <h2 class="section-title fade-up">The Services We Provide</h2>
+      <p class="section-subtitle fade-up" style="margin:0 auto">Reliable, comfortable rides for every occasion — from airports to weddings.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 22h20"/><path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.5-.5a3.5 3.5 0 0 1 5 0L15 10l6.5-6.5a2.12 2.12 0 1 1 3 3L18 13l4.5 4.5a3.5 3.5 0 0 1 0 5l-.5.5-6-3-1.1 1.1a2 2 0 0 1-1.8 0l-.17-.1a2 2 0 0 0-1.8 0L10 21.6"/></svg></div>
+        <h3>Airport Transfers</h3>
+        <p>Timely pick &amp; drop to and from airports. No stress, no delays — just smooth travel.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Intercity &amp; Interstate</h3>
+        <p>Travel to any city or state — near or far. Cross borders in comfort with Preet Travels.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Event Bookings</h3>
+        <p>Weddings, functions, and special occasions — arrive in style with Preet Travels.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></div>
+        <h3>Custom Trips</h3>
+        <p>Plan your own route, choose your own stops. We'll take you wherever you want to go.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW TO BOOK ====== -->
+  <section class="how-section">
+    <div style="text-align:center">
+      <p class="section-label fade-up">Simple Process</p>
+      <h2 class="section-title fade-up">How to Book</h2>
+    </div>
+    <div class="steps-container">
+      <div class="step fade-up">
+        <div class="step-number">1</div>
+        <div class="step-line"></div>
+        <h4>Choose Trip Type</h4>
+        <p>Airport, intercity, event, or a custom route.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-number">2</div>
+        <div class="step-line"></div>
+        <h4>Pick Date</h4>
+        <p>Select your travel date from our easy calendar picker.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-number">3</div>
+        <div class="step-line"></div>
+        <h4>Confirm &amp; Ride</h4>
+        <p>We confirm on WhatsApp and you're all set!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BOOKING ====== -->
+  <section class="booking-section" id="booking">
+    <div style="text-align:center">
+      <p class="section-label fade-up">Get Started</p>
+      <h2 class="section-title fade-up">Book Your Ride</h2>
+      <p class="section-subtitle fade-up" style="margin:0 auto">Fill in the details below and we'll connect with you on WhatsApp to confirm your booking.</p>
+    </div>
+    <div class="booking-container">
+      <form class="booking-form fade-up" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="e.g. 9876543210" required autocomplete="tel" inputmode="numeric">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tripType">Trip Type</label>
+            <select id="tripType" required>
+              <option value="" disabled selected>Select trip type</option>
+              <option value="Airport Transfer">Airport Transfer</option>
+              <option value="Intercity Travel">Intercity Travel</option>
+              <option value="Event Booking">Event Booking</option>
+              <option value="Custom Trip">Custom Trip</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Travel Date</label>
+            <div class="date-picker-wrapper">
+              <input type="text" id="date" placeholder="Pick a date" readonly required autocomplete="off">
+              <svg class="date-icon" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup">Pickup Location</label>
+            <input type="text" id="pickup" placeholder="e.g. Chandigarh Airport" required autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="drop">Drop Location</label>
+            <input type="text" id="drop" placeholder="e.g. Ludhiana" required autocomplete="off">
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">Send Booking Request ↗</button>
+      </form>
+
+      <div class="or-divider fade-up">or connect directly</div>
+
+      <a href="https://wa.me/917990050914" target="_blank" class="whatsapp-alt fade-up" id="whatsappDirect" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Preet Travels</h3>
+        <p>Your trusted partner for premium car rentals. One car, complete comfort, every journey made special.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#car">Our Car</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book Now</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 79900 50914</p>
+        <p><svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>preettravels@email.com</p>
+        <p><svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Vadodara, Gujarat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Preet Travels. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Date Picker Popup -->
+  <div id="datePickerOverlay" class="date-picker-overlay"></div>
+  <div id="datePickerPopup" class="date-picker-popup">
+    <div class="date-picker-header">
+      <button type="button" class="date-picker-nav" id="dpPrev" aria-label="Previous month">‹</button>
+      <span class="date-picker-month" id="dpMonthYear"></span>
+      <button type="button" class="date-picker-nav" id="dpNext" aria-label="Next month">›</button>
+    </div>
+    <div class="date-picker-days">
+      <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+    </div>
+    <div class="date-picker-grid" id="dpGrid"></div>
+    <div class="date-picker-footer">
+      <button type="button" class="date-picker-today" id="dpToday">Today</button>
+      <button type="button" class="date-picker-clear" id="dpClear">Clear</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
